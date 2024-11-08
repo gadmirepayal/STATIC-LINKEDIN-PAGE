@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linkedin Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="index.html" class="logo"><img src="./assist/icon/logo.png"></a>
+            <div class="search-box">
+                <img src="./assist/icon/search.png">
+                <input type="text" placeholder="Search">
+            </div>
+        </div>
+        <div class="navbar-center">
+            <ul>
+                <li><a href="#" class="active-link"><img src="./assist/icon/home.png"><span>Home</span></a></li>
+                <li><a href="#"><img src="./assist/icon/network.png"><span>My Network</span></a></li>
+                <li><a href="#"><img src="./assist/icon/jobs.png"><span>Jobs</span></a></li>
+                <li><a href="#"><img src="./assist/icon/message.png"><span>Messaging</span></a></li>
+                <li><a href="#"><img src="./assist/icon/notification.png"><span>Notifications</span></a></li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <div class="online">
+                <img src="./assist/image/pg.jpg" class="nav-profile-img" onclick="toggleMenu()">
+            </div> 
+        </div>
+<!-- --------- PROFILE DROP DOWN MENU ---------  -->
+    <div class="profile-menu-wrap" id="profileMenu">
+        <div class="profile-menu">
+            <div class="user-info">
+                <img src="./assist/image/pg.jpg">
+                <div>
+                    <h3>mivrosoft</h3>
+                    <a href="./assist/video 1/vedio.mp4">See your profile</a>
+                </div>
+            </div>
+            <hr>
+            <a href="#" class="profile-menu-link">
+                <img src="images/feedback.png">
+                <p>Give Feedback</p>
+                <span>></span>
+            </a>
+            <a href="#" class="profile-menu-link">
+                <img src="images/setting.png">
+                <p>Settings & Privacy</p>
+                <span>></span>
+            </a>
+            <a href="#" class="profile-menu-link">
+                <img src="images/help.png">
+                <p>Help & Support</p>
+                <span>></span>
+            </a>
+            <a href="#" class="profile-menu-link">
+                <img src="images/display.png">
+                <p>Display & Accessibility</p>
+                <span>></span>
+            </a>
+            <a href="#" class="profile-menu-link">
+                <img src="images/logout.png">
+                <p>Logout</p>
+                <span>></span>
+            </a>
+        </div>
+    </div>  
+    </nav>
+<!-- --------- END OF NAVBAR ---------  -->
+<div class="container">
+    <!-- --------- LEFT SIDEBAR ---------  -->
+    <div class="left-sidebar">
+        <div class="sidebar-profile-box">
+            <img src="./assist/image/img10.jpg" width="100%" height="100">
+            <div class="sidebar-profile-info">
+             <img src="./assist/image/pg.jpg" alt="">
+                <h1>Payal Gadmire</h1>
+                <h3>full stack developer</h3>
+                <ul>
+                    <li>Your Profile Views <span>62</span></li>
+                    
+                    <li>Your Connections <span>155</span></li>
+                </ul>
+            </div>
+            <div class="sidebar-profile-link">
+                <a href="#"><img src="./assist/icon/items.png">My Item</a>
+                <a href="#"><img src="./assist/icon/premium.png">Try Premium</a>
+            </div>
+        </div>
+        <div class="sidebar-activity" id="sidebarActivity">
+            <h3>RECENT</h3>
+            <a href="#"> <img src="./assist/icon/recent.png">Web Development</a>
+            <a href="#"> <img src="./assist/icon/recent.png">User Interface</a>
+            <a href="#"> <img src="./assist/icon/recent.png">Online Learning</a>
+            <a href="#"> <img src="./assist/icon/recent.png">Learn Online</a>
+            <a href="#"> <img src="./assist/icon/recent.png">Code Better</a>
+            <h3>GROUPS</h3>
+            <a href="#"> <img src="./assist/icon/group.png">Web Design Group</a>
+            <a href="#"> <img src="./assist/icon/group.png">HTML & CSS Learner</a>
+            <a href="#"> <img src="./assist/icon/group.png">Learn Coding Online</a>
+            <h3>HASHTAG</h3>
+            <a href="#"> <img src="./assist/icon/hashtag.png">webdevelopment</a>
+            <a href="#"> <img src="./assist/icon/hashtag.png">userinterface</a>
+            <a href="#"> <img src="./assist/icon/hashtag.png">onlinelearning</a>
+            <div class="discover-more-link">
+                <a href="#">Discover More</a>
+            </div>
+        </div>
+        <p id="showMoreLink" onclick="toggleActivity()">Show more <b>+</b></p>
+    </div>
+    <!-- --------- MAIN CONTENT ---------  -->
+    <div class="main-content">
+    <div class="create-post">
+    <div   class="create-post-input">
+    <img src="./assist/image/pg.jpg">
+
+                <textarea rows="2" placeholder="Write a somting"></textarea>
+            </div>
+          <div class="create-post-links">
+                <li><img src="./assist/icon/photo.png">Photo</li>
+                <li><img src="./assist/icon/video.png">Video</li>
+                <li><img src="./assist/icon/event.png">Event</li>
+                <li>Post</li>
+            </div>
+        </div>
+        <div class="sort-by">
+            <hr>
+            <p>Sort by: <span>top <img src="./assist/icon/arrow.png"></span></p>
+        </div>
+    <!-- --------- POST1 START ---------  -->
+        <div class="post">
+            <div class="post-author">
+                <img src="./assist/image/success 2.jpg" >
+                <div>
+                    <h1>Walt Disney </h1>
+                    <small></small>
+                </div>
+            </div>
+            <p>  your positive action combined with positive thinking result in success.</p>
+            <img src="./assist/image/new.jpg"width="100%">
+            <div class="post-stats">
+                <div>
+                    <img src="./assist/icon/thumbsup.png" alt="">
+                    <img src="./assist/icon/love.png" alt="">
+                    <img src="./assist/icon/clap.png" alt="">
+                    <span class="liked-users"> others</span>
+                </div>
+                <div>
+                    <span>22 comments &middot; 40 shares</span>
+                </div>
+            </div>
+            <div class="post-activity">
+                <div class="post-activity-link">
+                    <img src="./assist/icon/like.png" >
+                    <span>Like</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="./assist/icon/comment.png" >
+                    <span>Comments</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="./assist/icon/share.png" >
+                    <span>Share</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="./assist/icon/send.png" >
+                    <span>Send</span>
+                </div>
+            </div>
+        </div>
+        <!-- --------- POST1 END ---------  -->
+       <!-- --------- POST2 START ---------  -->
+       <div class="post">
+        <div class="post-author">
+            <img src="./assist/image/apple.jpg">
+            <div>
+                <h1>Apple
+                    <br>
+                 prometed
+                </h1> 
+                <small>iPhone 16 Pro Max Powered by the A18 Pro chip and built for Apple Intelligence, the Pro lineup introduces larger display sizes, Camera Control, innovative pro camera features, and a huge leap in battery life</small>
+            </div>
+        </div>
+        <video src="./assist/video 1/video1.mp4" width="100%" controls > </video>
+        <div class="post-stats">
+            <div>
+                <img src="./assist/icon/thumbsup.png" alt="">
+                <img src="./assist/icon/love.png" alt="">
+                <img src="./assist/icon/clap.png" alt="">
+                <span class="liked-users"> 93 </span>
+            </div>
+            <div>
+                <span>22 comments &middot; 40 shares</span>
+            </div>
+        </div>
+        <div class="post-activity">
+            <div class="post-activity-link">
+                <img src="./assist/icon/like.png" >
+                <span>Like</span>
+            </div>
+            <div class="post-activity-link">
+                <img src="./assist/icon/comment.png" >
+                <span>Comments</span>
+            </div>
+            <div class="post-activity-link">
+                <img src="./assist/icon/share.png" >
+                <span>Share</span>
+            </div>
+            <div class="post-activity-link">
+                <img src="./assist/icon/send.png" >
+                <span>Send</span>
+            </div>
+        </div>
+    </div>
+    <!-- --------- POST2 END ---------  -->   
+
+    <!-- --------- POST3 START ---------  -->
+        
+    <div class="post">
+        <div class="post-author">
+            <img src="./assist/image/byjus3.jpg" >
+            <div>
+                <h1>BYJUS</h1>
+                <small> The Founder of Byju Raveendran (born 5 January 1980) is an Indian entrepreneur, investor and educator who, with his wife Divya Gokulnath, co-founded Byju's.</small>
+            </div>
+        </div>
+        <img src="./assist/image/byjus.jpg" width="100%">
+        <div class="post-stats">
+            <div>
+                <img src="./assist/icon/thumbsup.png" alt="">
+                <img src="./assist/icon/love.png" alt="">
+                <img src="./assist/icon/clap.png" alt="">
+                <span class="liked-users"> 45 others</span>
+            </div>
+            <div>
+                <span>20comments &middot; 42s hares</span>
+            </div>
+        </div>
+        <div class="post-activity">
+            <div class="post-activity-link">
+                <img src="./assist/icon/like.png" >
+                <span>Like</span>
+            </div>
+            <div class="post-activity-link">
+                <img src="./assist/icon/comment.png" >
+                <span>Comments</span>
+            </div>
+            <div class="post-activity-link">
+                <img src="assist/icon/share.png" >
+                <span>Share</span>
+            </div>
+            <div class="post-activity-link">
+                <img src="./assist/icon/send.png" >
+                <span>Send</span>
+            </div>
+        </div>
+    </div>
+    <!-- --------- POST3 END ---------  -->
+    <!-- --------- POST4 START ---------  -->
+        
+    <div class="post">
+        <div class="post-author">
+            <img src="./assist/image/microsoft.png" >
+            <div>
+                <h1>microsoft</h1>
+                <small>What's new with Windows App ?</small>
+                <small>4 hours ago</small>
+            </div>
+        </div>
+        <p>With the general availability of Windows App, you’ll see enhancements designed to make accessing and managing Windows resources even more seamless. These updates bring new features and improvements to your experience across all major platforms:</p>
+        <video src="./assist/video 1/video 2.mp4" width="100%"  controls ></video>
+        <div class="post-stats">
+            <div>
+                <img src="./assist/icon/thumbsup.png" alt="">
+                <img src="./assist/icon/love.png" alt="">
+                <img src="./assist/icon/clap.png" alt="">
+                <span class="liked-users">87 others</span>
+            </div>
+            <div>
+                <span>24 comments &middot; 44 shares</span>
+            </div>
+        </div>
+        <div class="post-activity">
+
+            <div class="post-activity-link">
+                <img src="./assist/icon/like.png" >
+                <span>Like</span>
+            </div>
+          <div class="post-activity-link"> 
+                <img src="./assist/icon/comment.png" >
+                <span>Comments</span>
+            </div>
+            <div class="post-activity-link">
+                <img src="./assist/icon/share.png" >
+                <span>Share</span>
+            </div>
+            <div class="post-activity-link">
+                <img src="./assist/icon/send.png" >
+                <span>Send</span>
+            </div>
+        </div>
+    </div>
+    <!-- --------- POST4 END ---------  -->      
+    </div>
+
+
+    <!-- --------- RIGHT SIDEBAR ---------  -->
+
+    <div class="right-sidebar">
+        <div class="sidebar-news">
+            <img src="./assist/icon/more.png" class="info-icon">
+            <h3>Trending News</h3>
+            <a href="#">High Demand for Skilled Manpower</a>
+            <span>1d ago &middot; 10,934 readers</span>
+
+            <a href="#">Careers growing horizontally too</a>
+            <span>1d ago &middot; 12,434 readers</span>
+
+            <a href="#">Less work visa for US, more for UK</a>
+            <span>1d ago &middot; 4,314 readers</span>
+
+            <a href="#">More hiring = Higher confidence?</a>
+            <span>1d ago &middot; 10,934 readers</span>
+
+            <a href="#">Izhan is the world's richest man</a>
+            <span>1d ago &middot; 4,264 readers</span>
+
+            <a href="#" class="read-more-link">Read More</a>
+        </div>
+
+        <div class="sidebar-ad">
+            <small>Ad &middot; &middot; &middot;</small>
+            <p> full Stack Developer</p>
+            <div>
+                <img src="./assist/image/pg.jpg"">
+            </div>
+            <a href="#" class="ad-link">Learn More</a>
+        </div>
+        </div>
+        </div>
+        </body>
+        </html>
